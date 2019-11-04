@@ -1,4 +1,7 @@
 # infoManage
 manage info query from other web applications
 
-for test branch of dev
+
+for test merge branch of master  and dev
+
+
