@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.beta.mapper.InfoMapper">
+
+    <!-- 查询所有图片 -->
+    <select id="getContentByInfoId" resultType="Map">
+		select message,note from descript_info where `state`=1 and `info_id`=#{infoId}
+	</select>
+
+    <!-- 查询描述 -->
+    <select id="getImagesByInfoId" resultType="Map">
+		select image_id,info_id,image_path,note from image_info where `state`=1 and `info_id`=#{infoId}
+	</select>
+
+</mapper>
